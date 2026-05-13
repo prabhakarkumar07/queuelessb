@@ -1,0 +1,1 @@
+ALTER TABLE tokens ADD COLUMN no_show_probability DOUBLE PRECISION DEFAULT 0.0;

@@ -1,0 +1,4 @@
+-- THIS FILE IS INTENTIONALLY A STUB.
+-- Content moved to V16_1__business_account_billing_settings.sql
+-- to resolve a duplicate V16 version conflict with V16__shop_incidents_and_rules.sql.
+-- Flyway requires unique version numbers per file.

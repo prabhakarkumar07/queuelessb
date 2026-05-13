@@ -1,0 +1,3 @@
+-- THIS FILE IS INTENTIONALLY A STUB.
+-- Business account billing columns were moved to V16_1__business_account_billing_settings.sql
+-- to avoid duplication with V16__shop_incidents_and_rules.sql.

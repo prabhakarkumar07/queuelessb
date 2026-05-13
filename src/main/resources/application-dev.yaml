@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    password: ${DB_PASSWORD:admin123}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+jwt:
+  secret: ${JWT_SECRET:dev-only-change-this-secret-before-production-1234567890}
+
+minio:
+  access-key: ${MINIO_ACCESS:minioadmin}
+  secret-key: ${MINIO_SECRET:minioadmin}
+
+logging:
+  level:
+    com.queueless: DEBUG

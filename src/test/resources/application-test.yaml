@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:queueless_test;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  flyway:
+    enabled: false
+  cache:
+    type: simple
+  data:
+    redis:
+      repositories:
+        enabled: false
+
+jwt:
+  secret: test-secret-key-that-is-long-enough-for-hs256-signing
+  access-token-expiry: 3600000
+  refresh-token-expiry: 604800000
+
+msg91:
+  auth-key: test
+  sender-id: QLESS
+  template-id: test
+  api-url: http://localhost/msg91
+
+razorpay:
+  key-id: test
+  key-secret: test
+  webhook-secret: test
+
+minio:
+  endpoint: http://localhost:9000
+  access-key: test
+  secret-key: test
+  bucket: attachments-test
